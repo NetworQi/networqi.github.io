@@ -1,33 +1,33 @@
 <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
+<section id="team" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Les fondateurs</h2>
+        <h3 class="section-subheading text-muted">Qui sommes-nous ?</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for member in site.people %}
+      <div class="col-sm-4 {% if forloop.index0 == 0 %}col-sm-offset-2{% endif %}">
+        <div class="team-member">
+          <img src="/public/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+          <h4>{{ member.name }}</h4>
+          <p class="text-muted">{{ member.position }}</p>
+          <ul class="list-inline social-buttons">
+            {% for network in member.social %}
+              <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }}"></i></a>
+            {% endfor %}
+          </ul>
         </div>
-    </section>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted">Arnaud, ingénieur et moi, chef de projet nous nous sommes rencontrés dans une société très exigeante et à la pointe dans l’univers du web. Nous avons acquis une expertise dans ce domaine qui nous permet d’être complémentaire. C’est à la suite de plusieurs demandes de praticiens en médecine douce qui nous faisaient confiance et constatant un manque cruel d’offres sérieuses et abordables que nous sommes décidés à mettre en place un service haut de gamme vraiment adapté à vos besoins et à votre budget.
+          Mais cela ne nous intéressait pas de développer des sites en partant à chaque fois de zéro avec des budgets trop serrés pour aboutir à un résultat décevant. Alors on a réfléchi comment mettre en place un outil intelligent qui mutualiserait les efforts.</p>
+      </div>
+    </div>
+  </div>
+</section>

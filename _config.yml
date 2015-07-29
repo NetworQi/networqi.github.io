@@ -3,13 +3,13 @@ url: http://agency.networqi.com
 # Site settings
 title: networQi agency
 email: contact@networqi.com
-description: Réalisation de sites web pour thérapeutes & praticiens. Site haut de gamme & Pas cher
+description: Sites web haut de gamme à partir de 349€ pour THÉRAPEUTES & PRATICIENS
 
 # Team names, titles and social links
 people:
 - name: Anne-Laure Paccoud
   pic: anne-laure
-  position: Business Developer
+  position: Chef de projet
   social:
     - title: linkedin
       url: https://fr.linkedin.com/in/alpaccoud
@@ -20,7 +20,7 @@ people:
 
 - name: Arnaud Dezandee
   pic: arnaud-dezandee
-  position: Lead Developer
+  position: Ingénieur Dévelopement
   social:
     - title: linkedin
       url: https://fr.linkedin.com/in/adezandee

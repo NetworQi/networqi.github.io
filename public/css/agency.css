@@ -153,7 +153,11 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  padding: 0;
   color: #fed136;
+}
+.navbar-default .navbar-brand img {
+  height: 60px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -482,8 +486,8 @@ section h3.section-subheading {
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 16px;
-    font-size: 13px;
+    margin-top: 30px;
+    font-size: 10px;
     line-height: 18px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
@@ -505,7 +509,7 @@ section h3.section-subheading {
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 18px;
     line-height: 26px;
   }
@@ -526,7 +530,7 @@ section h3.section-subheading {
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 40px;
+    margin-top: 55px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
@@ -726,4 +730,15 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+.timeline-body .text-muted {
+  max-height: 150px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+.timeline-body .text-muted:hover {
+  max-height: 500px;
+}
+.timeline-body .text-muted:hover + i.fa {
+  display: none;
 }

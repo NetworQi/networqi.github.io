@@ -181,7 +181,12 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  padding: 0;
   color: @primary;
+
+  img {
+    height: 60px;
+  }
 }
 
 .navbar-default .navbar-brand:hover,
@@ -570,8 +575,8 @@ section h3.section-subheading {
   }
 
   .timeline > li .timeline-image h4 {
-    margin-top: 16px;
-    font-size: 13px;
+    margin-top: 30px;
+    font-size: 10px;
     line-height: 18px;
   }
 
@@ -598,7 +603,7 @@ section h3.section-subheading {
   }
 
   .timeline > li .timeline-image h4 {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 18px;
     line-height: 26px;
   }
@@ -624,7 +629,7 @@ section h3.section-subheading {
   }
 
   .timeline > li .timeline-image h4 {
-    margin-top: 40px;
+    margin-top: 55px;
   }
 
   .timeline > li.timeline-inverted > .timeline-panel {
@@ -864,4 +869,18 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: @primary;
+}
+
+.timeline-body {
+  .text-muted{
+    max-height: 150px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      max-height: 500px;
+    }
+  }
+  .text-muted:hover + i.fa {
+    display: none;
+  }
 }

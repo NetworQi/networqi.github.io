@@ -3,4 +3,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://agency.networqi.com/sitemap.xml
+Sitemap: https://agency.networqi.com/sitemap.xml
